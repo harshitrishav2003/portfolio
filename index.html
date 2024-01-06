@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="file:///Users/harshitrishav/Desktop/portfolio/fontawesome-free-6.5.1-web/css/all.min.css">   
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const links = document.querySelectorAll('nav a');
+    
+          links.forEach(link => {
+            link.addEventListener('click', smoothScroll);
+          });
+    
+          function smoothScroll(e) {
+            e.preventDefault();
+    
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+    
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      </script>
+      
+    <title>Harshit</title>
+</head>
+<body>
+    <header>
+     
+        <nav>
+            <a href="#home-section">Home</a>
+      <a href="#resume-section">Resume</a>
+      <a href="#blog-section">Blog</a>
+      <a href="#contact-section">Contact</a>
+        </nav>
+    </header>
+    
+      <div class="hero-container">
+        <!-- Content Container -->
+        <div class="content-container">
+            
+            <div class="subheadline">Hi, My name is</div>
+            <div class="headline">Harshit Rishav</div>
+            <a href="HARSHIT_RISHAV_CV NEW.pdf" class="button">View Portfolio</a>
+        </div>
+    
+        <!-- Photo Container -->
+        <div class="photo-container">
+          <!-- Replace the source with the path to your image -->
+          <img src="rishav.png" alt="Hero Image" class="hero-image">
+        </div>
+      </div>
+      
+      
+  <div class="path">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1" height="200" width="400">
+ <defs>
+   <path id="basePath" d="M 50,150 A 280 500 0 0 1 350,150" />
+   <mask id="mask">
+     <use xlink:href="#basePath" stroke-width="3" stroke="white"
+          stroke-dasharray="1000,0" fill="none">
+       <animate attributeName="stroke-dasharray" from="0,348.5" to="348.5,0"
+           begin="0s" dur="5s" fill="freeze" />
+      
+     </use>
+   </mask>
+ </defs>
+ <circle r="4" cx="50" cy="150" fill="yellow" />
+
+ <circle r="4" cx="350" cy="150" fill="yellow" />
+ 
+ <use xlink:href="#basePath" stroke-width="2" stroke-dasharray="10"
+      stroke="yellow" fill="none" mask="url(#mask)"/>
+ <path d="M 27,3 H 21 L 13,15 H 9 L 12,3 H 5 L 3,7 H -1 L 1,0 -1,-7 H 3 L 5,-3 H 12 L 9,-15 H 13 L 21,-3 H 27 C 33,-3 33,3 27,3 Z"
+      fill="white" stroke="black" stroke-width="1.5">
+   <animateMotion rotate="auto" begin="0s" dur="5s" fill="freeze">
+     <mpath xlink:href="#basePath"/>
+   </animateMotion>
+ </path>
+ 
+
+ <text x="50" y="180" text-anchor="middle" dy=".3em" fill="white" opacity="0" >
+   <animate attributeName="opacity" from="0" to="1"
+           begin="0s" dur="2s" fill="freeze" />
+   Patna
+ </text>
+ 
+
+ <text x="350" y="180" text-anchor="middle" dy=".3em" fill="white" opacity="0">
+   <animate attributeName="opacity" from="0" to="1"
+           begin="5s" dur="2s" fill="freeze" />
+   Delhi
+ </text>
+</svg>
+
+</div>
+
+  
+   <!-- <section class="college-details-container">
+        <div class="college-details-box">
+            <i class="fas fa-graduation-cap icon"></i>
+
+            <h2>My College</h2>
+            <p>Delhi Technological University</p>
+            <p><i class="fas fa-map-marker-alt"></i> Location: New Delhi</p>
+            <p>Program: Electrical Engineering</p>
+            <p>Graduation Year: 2026</p>
+        </div>
+        <div class="college-details-box">
+            <i class="fas fa-graduation-cap icon"></i>
+            <h2>Another College</h2>
+            <p>Indian Institute of Technology Madras</p>
+            <p><i class="fas fa-map-marker-alt"></i> Distance Learning</p>
+            <p>Program: Data Science and Programming</p>
+            <p>Graduation Year: 2026</p>
+        </div>
+    </section> -->
+    <div class="timeline">
+        <div class="timeline-content">
+          <div class="timeline-period">2009 - 2019</div>
+          <div class="timieline-title">Secondary School</div>
+          ST. KARENS SECONDARY SCHOOL <br> Patna City, BR <br>
+          Secondary School Certificate<br>
+          Percentage : 85.0
+        </div>
+      
+        <div class="timeline-content">
+          <div class="timeline-period">2019 - 2021</div>
+          <div class="timieline-title">Higher Secondary School</div>
+          <div class="timeline-body">INTERNATIONAL SCHOOL DWARKA<br>
+          New Delhi, DL<br>
+          Higher Secondary Certificate<br>
+          Percentage : 91.2
+        </div> 
+        </div>
+      
+        <div class="timeline-content">
+          <div class="timeline-period">2022 - 2026</div>
+          <div class="timieline-title">Bachelors</div>
+          DELHI TECHNOLOGICAL UNIVERSITY (DTU) <br> New Delhi, DL <br>
+         Bachelor of Technology: Electrical Engineering <br>
+         CGPA: 8.70
+        </div>
+      
+        <div class="timeline-content">
+          <div class="timeline-period">2022 - 2025</div>
+          <div class="timieline-title">Correspondace </div>
+          INDIAN INSTITUTE OF TECHNOLOGY MADRAS (IITM) <br>
+         Bachelor of Science: Data Science and Programming<br>
+        SSCGPA: 7.40
+        </div>
+      
+      
+      </div>
+      <h2 class="center">Projects</h2>
+    <div class="portfolio-container">
+        <div class="portfolio-card">
+            <img src="web-development.webp">
+            <h2>Trogis Website</h2>
+            <p> Comprehensive product pages with highquality images, detailed descriptions, and customer reviews.</p>
+        </div>
+        <div class="portfolio-card">
+            <img src="3.png">
+            <h2>Rhabdom Website</h2>
+            <p>Collaborated with a dynamic team to design, develop, and deploy websites for clients</p>
+        </div>
+        <div class="portfolio-card">
+            <img src="5.jpeg">
+            <h2>Business Data Management (BDM)</h2>
+            <p>Data Analysis: Comprehensive analysis of sales and customer data.</p>
+        </div>
+    </div> 
+   
+<section id="resume-section">
+    <section class="resume-section">
+        <h2>Resume</h2>
+        <p>Download my resume to learn more about my skills and experience.</p>
+        <a href="HARSHIT_RISHAV_CV NEW.pdf" download="Your_Name_Resume.pdf" class="cta-button">
+            <i class="fas fa-file-pdf"></i> Download Resume
+        </a>
+    </section>
+    </section>
+       
+     
+ 
+    <section id="blog-section">
+        <div class="blog-profile1"> 
+          <div class="date-and-dots"> 
+              <div class="dots-container"> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+              </div> 
+              <div class="date-container"> 
+                  <i class="fas fa-calendar-alt calendar-icon"></i> 
+                  <p>July 20, 2023</p> 
+              </div> 
+          </div> 
+          <div class="horizontal-line"></div> 
+     
+          <div class="flex-container">
+            <img src="poll.jpeg" alt="Content Photo" class="content-photo">
+            <div class="content-container">
+                <!-- <h2>Introduction:</h2> -->
+                <p class="content"><i class="fas fa-quote-left quote"></i>Diving into the democratic rhythm! 🗳️🎱 Casting votes like a pro in the great game of polls.<i class="fas fa-quote-right quote"></i></p>
+            </div>
+        </div>
+        </div> 
+        
+     
+        <div class="blog-profile2">
+            <div class="date-and-dots">
+                <div class="dots-container">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="date-container">
+                    <i class="fas fa-calendar-alt calendar-icon"></i>
+                    <p>July 20, 2023</p>
+                </div>
+            </div>
+            <div class="horizontal-line"></div>
+        
+            <div class="flex-container">
+                <img src="shubh.jpeg" alt="Content Photo" class="content-photo">
+                <div class="content-container">
+                    <!-- <h2>Introduction:</h2> -->
+                    <p class="content"><i class="fas fa-quote-left quote"></i>Brotherhood vibes and party lights. 🎉👬 Making memories that last a lifetime.<i class="fas fa-quote-right quote"></i></p>
+                </div>
+            </div>
+        </div>
+        
+     
+        <div class="blog-profile3"> 
+          <div class="date-and-dots"> 
+              <div class="dots-container"> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+              </div> 
+              <div class="date-container"> 
+                  <i class="fas fa-calendar-alt calendar-icon"></i> 
+                  <p>July 20, 2023</p> 
+              </div> 
+          </div> 
+          <div class="horizontal-line"></div> 
+     
+          <div class="flex-container">
+            <img src="india.jpeg" alt="Content Photo" class="content-photo">
+            <div class="content-container">
+                <!-- <h2>Introduction:</h2> -->
+                <p class="content"><i class="fas fa-quote-left quote"></i>In the warmth of heartfelt conversations with someone who makes every word feel like a melody. 💬❤️<i class="fas fa-quote-right quote"></i></p>
+            </div>
+        </div>
+        </div> 
+     
+        <div class="blog-profile4"> 
+          <div class="date-and-dots"> 
+              <div class="dots-container"> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+              </div> 
+              <div class="date-container"> 
+                  <i class="fas fa-calendar-alt calendar-icon"></i> 
+                  <p>July 20, 2023</p> 
+              </div> 
+          </div> 
+          <div class="horizontal-line"></div> 
+     
+          <div class="flex-container">
+            <img src="diwali.jpeg" alt="Content Photo" class="content-photo">
+            <div class="content-container">
+                <!-- <h2>Introduction:</h2> -->
+                <p class="content"><i class="fas fa-quote-left quote"></i>Illuminate the night with the glow of joy and the sparkle of traditions. ✨🪔 Diwali vibes lighting up the darkness!<i class="fas fa-quote-right quote"></i></p>
+            </div>
+        </div>
+        </div> 
+        </section>
+        <section id="contact-section">
+        <div class="new-body">
+        <div class="container">
+            <div class="left-column">
+                <div class="flip-container">
+                    <div class="flip-inner-container">
+                        <div class="flip-front">
+                            <div class="profile-image1">
+                                <!-- Add your image or content here -->
+                            </div>
+                            <h3>Harshit</h3>
+                            <h6> For contact click me</h6>
+                            
+                        </div>
+                        <div class="flip-back">
+                            <h2>Contact us</h2>
+                            <form>
+                                <input type="text" placeholder="Your name">
+                                <input type="text" placeholder="Your email">
+                                <textarea placeholder="Your message" rows="5"></textarea>
+                                <input type="submit" value="Send">
+                            </form>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/harshit-rishav-7683a2201/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/harshit_rishav?igsh=MWc3d3Y1eWxxcW9qbw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#https://twitter.com/HarshitRishav1" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/channel/UC7EXu9mcMNMXYf0OWgt9q6A" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <section class="contact">
+                    <div class="contact-content">
+                        <h2>Contact Me</h2>
+                        <h4>Feel free to reach out for any inquiries or collaboration opportunities.</h4>
+                        <div class="contact-info-box">
+                            <h3 class="bold">Mobile Number</h3>
+                            <p>7257005259</p>
+                            <h3 class="bold">Email id</h3>
+                            <p>harshitrishav987@gmail.com</p>
+                        </div>
+            
+                       
+                       
+                    </div>
+                </section>
+            </section>
+            </div>
+        </div>
+        </div>
+     
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/harshit-rishav-7683a2201/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/harshit_rishav?igsh=MWc3d3Y1eWxxcW9qbw==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/HarshitRishav1" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UC7EXu9mcMNMXYf0OWgt9q6A" target="_blank"><i class="fab fa-youtube"></i></a>
+            
+        </div>
+    </footer>
+</body>
+
+</html>
