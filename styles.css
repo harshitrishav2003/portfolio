@@ -708,6 +708,8 @@ button:hover {
   /* add hover to Flip horizonally */
   .flip-container:hover .flip-inner-container{
     transform: rotateY(180deg);
+    margin-left: 15%;
+    margin-right: 15%;
   }
   
   /* position front and back */
