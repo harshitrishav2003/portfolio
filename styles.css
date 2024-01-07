@@ -34,26 +34,25 @@ nav a {
     font-size: 16px;
 }
 
-/* Default styles for larger screens */
-/* Default styles for larger screens */
+
 .container {
   display: flex;
 }
 .left-container, .right-container {
   flex: 1;
-  /* Adjust flex values based on your design */
+ 
   padding: 50px;
-  /* Add any other styling you need */
+  
 }
 
 .left-container {
-  /* Styling for the left container */
+  
   background-color: #000;
 }
 
 .right-container {
   text-align: center;
-  /* Styling for the right container */
+  
   background-color: #000;
 }
 
@@ -108,14 +107,14 @@ nav a {
 /* Container for the content */
 .content-container {
   margin-left: 10%;
-  flex: 1; /* Takes up remaining space */
+  flex: 1; 
 }
 
 /* Container for the photo */
 .photo-container {
-  width: 500px; /* Adjust the width as needed */
-  height: 500px; /* Adjust the height as needed */
-  border-radius: 50%; /* Makes it a circle, adjust as needed */
+  width: 500px; 
+  height: 500px; 
+  border-radius: 50%; 
   overflow: hidden;
 }
 
@@ -123,24 +122,24 @@ nav a {
 .photo-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Maintains aspect ratio while covering the container */
+  object-fit: cover; 
 }
 @media (max-width: 767px) {
   .hero-container {
-    flex-direction: column; /* Change to a column layout */
+    flex-direction: column; 
   }
 
   .content-container {
-    order: 2; /* Set the order of the content container to 2 */
+    order: 2; 
   }
 
   .photo-container {
     order: 1;
-    width: 300px; /* Adjust the width as needed */
-  height: 300px; /* Set the order of the photo container to 1 */
+    width: 300px;
+  height: 300px; 
   }
 }
-/* Media query for smaller screens (e.g., mobile) */
+
 @media (max-width: 768px) {
   .hero {
     flex-direction: column-reverse;
@@ -150,21 +149,21 @@ nav a {
   .hero-content {
     position: static;
     transform: none;
-    margin-top: 20px; /* Add some space between image and content */
+    margin-top: 20px; 
   }
   .left-container, .right-container {
-    order: 0; /* Default order */
+    order: 0; 
   }
 
   .right-container {
-    order: -1; /* Move the right container above the left for mobile view */
+    order: -1; 
   }
 
   .hero-image {
-    order: -1; /* Set the order to -1 to make it appear first in the row */
+    order: -1; 
     margin-left: 0;
     width: 100%;
-    max-width: 400px; /* Adjust the maximum width of the image as needed */
+    max-width: 400px; 
   }
 }
 
@@ -181,15 +180,15 @@ nav a {
     border-radius: 10px;
     transition: border 0.3s;
     position: relative;
-    border: 2px solid #E6B31E; /* Set a transparent border initially */
-    flex: 1; /* Use flex property to make each box take half of the container */
+    border: 2px solid #E6B31E; 
+    flex: 1; 
     margin: 0 30px; 
     margin-right: 10%;
     margin-left: 10%;
 }
 
 .college-details-box:hover {
-    border-color: #f1e28d; /* Yellow color on hover */
+    border-color: #f1e28d; 
     cursor: pointer;
 }
 
@@ -207,7 +206,7 @@ nav a {
 .college-details-box i {
    
     font-size: 20px;
-    color: #f9f9f8; /* Yellow color for the graduation cap icon */
+    color: #f9f9f8; 
     position: absolute;
     top: 10px;
     
@@ -448,33 +447,33 @@ nav a {
  }
  .flex-container {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap onto the next line */
-  justify-content: space-between; /* Add space between items */
-  align-items: center; /* Center items vertically */
-  text-align: center; /* Center text */
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  align-items: center; 
+  text-align: center;
 }
 
 .content-photo {
-  max-width: 100%; /* Adjust the maximum width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-top: 10px; /* Add margin for spacing */
+  max-width: 100%; 
+  height: auto; 
+  margin-top: 10px; 
 }
 
 .content-container {
-  flex: 1; /* Take up remaining space in the row */
-  max-width: 400px; /* Adjust the maximum width as needed */
-  margin-top: 10px; /* Add margin for spacing */
+  flex: 1; 
+  max-width: 400px;
+  margin-top: 10px; 
 } 
  @media (max-width: 767px) {
-  /* Adjust the breakpoint as needed for mobile devices */
+  
   .flex-container {
-      flex-direction: column; /* Change to a column layout on smaller screens */
+      flex-direction: column; 
       align-items: flex-start;
-      align-items: center; /* Align items to the start on smaller screens */
+      align-items: center; 
   }
 
   .content-container {
-      max-width: 100%; /* Full width for content on smaller screens */
+      max-width: 100%; 
   }
 }
 
@@ -499,7 +498,7 @@ nav a {
  .resume-section {
     text-align: center;
     padding: 40px 20px;
-    background-color: #000; /* Set the background color as needed */
+    background-color: #000; 
 }
 
 .resume-section h2 {
@@ -516,14 +515,14 @@ nav a {
     display: inline-block;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007bff; /* Set the button color as needed */
+    background-color: #007bff; 
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .cta-button:hover {
-    background-color: #0056b3; /* Darker color on hover */
+    background-color: #0056b3; 
 }
 
 .contact {
@@ -538,18 +537,18 @@ nav a {
     margin: 0 auto;
 }
 .contact-info-box {
-  background: #000 /* Set background color */
-  padding: 15px; /* Add padding for spacing */
-  margin-bottom: 15px; /* Add margin for separation between boxes */
-  border-radius: 5px; /* Add border-radius for rounded corners */
+  background: #000 ;
+  padding: 15px; 
+  margin-bottom: 15px; 
+  border-radius: 5px; 
 }
 
 .contact-info-box h3 {
-  margin-bottom: 5px; /* Add margin for spacing between title and content */
+  margin-bottom: 5px;
 }
 
 .contact-info-box p {
-  margin: 0; /* Remove default margin for paragraphs */
+  margin: 0; 
 }
 .contact h2 {
     font-size: 32px;
@@ -577,8 +576,8 @@ textarea {
     width: 50%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 2px solid #fff; /* White border */
-    background-color: #000; /* Black background */
+    border: 2px solid #fff; 
+    background-color: #000; 
     color: #fff;
     border-radius: 50px;
   
@@ -586,14 +585,14 @@ textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #fff; /* White background */
-    color: #000; /* Black text */
+    background-color: #fff; 
+    color: #000; 
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #333; /* Darker background on hover */
+    background-color: #333; 
     color: #fff;
 }
 
@@ -617,7 +616,7 @@ button:hover {
 }
 
 .social-icons a:hover i {
-    color: #FFD700; /* Yellow color on hover */
+    color: #FFD700; 
 }
 
 .portfolio-container {
@@ -681,7 +680,7 @@ button:hover {
 
   @media (max-width: 768px) {
     .egg {
-      --size: 60%; /* Adjust the size for mobile */
+      --size: 60%; 
     }
   }
 
@@ -727,9 +726,9 @@ button:hover {
   
   /* flip  front from Start Here */
   .flip-front{
-    background: #56CCF2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFD700, #c3b83d);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #c3b83d, #FFD700);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    background: #56CCF2;  
+    background: -webkit-linear-gradient(to right, #FFD700, #c3b83d);  
+    background: linear-gradient(to right, #c3b83d, #FFD700); 
   color: #ffffff;
   padding: 20px;
   }
@@ -857,7 +856,7 @@ button:hover {
     
     width: auto;
     margin-top: auto;
-      flex-direction: column; /* Display items in a column layout on smaller screens */
+      flex-direction: column; 
   }
 }
 
@@ -879,7 +878,7 @@ button:hover {
     
     width: auto;
     margin-top: 300px;
-      flex-direction: column; /* Display items in a column layout on smaller screens */
+      flex-direction: column; 
   }
 }
 .timeline {
