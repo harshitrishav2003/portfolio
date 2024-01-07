@@ -695,7 +695,8 @@ button:hover {
   
   /* Flip Inner Container */
   .flip-inner-container{
-    position: relative;
+    margin-left: 5%;
+    
     width: 100%;
     height: 95%;
     text-align: center;
